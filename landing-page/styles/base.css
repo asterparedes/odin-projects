@@ -6,6 +6,8 @@
     --primary-font: Roboto, helvetica, sans-serif;
 }
 
+/* Change colors and make it responsive */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,10 +38,12 @@ header {
 
 .logo {
     font-size: 28px;
+    margin-left: 30px;
 }
 
 .links {
     font-size: 18px;
+    margin-right: 30px;
 }
 
 .links a {
@@ -50,7 +54,7 @@ header {
 
 .card1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
 }
 
@@ -61,6 +65,17 @@ header {
 .hero-content h1 {
     font-size: 48px;
     font-weight: 700;
+}
+
+button {
+    font-size: 18px;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 10px;
+    padding: .5rem 1.95rem;
+    border: none;
+    border-radius: .5rem;
 }
 
 .background {
@@ -76,6 +91,89 @@ header {
 .background p {
     text-align: center;
     padding: 50px;
+}
+
+.card2 {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card2 h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.small-card div {
+    margin: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: .5rem;
+    width: 150px;
+    height: 150px;
+}
+
+.small-card p {
+    margin-left: 1rem;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+.card3 {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10rem;
+}
+
+.card3 h3 {
+    text-align: left;
+    font-size: 36px;
+    font-style: italic;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.card3 p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card4 {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-gap: 1rem;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border-radius: .5rem;
+    margin: 5rem;
+    padding: 5rem;
+}
+
+.background1 {
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.card4 button {
+    width: 150px;
+    height: 50px;
+    padding: .5rem;
+    margin: .5rem;
+    grid-column: 2 / 3;
+    border: 1px solid var(--secondary-color);
+}
+
+footer {
+    padding: 2rem;
 }
 
 footer p {
